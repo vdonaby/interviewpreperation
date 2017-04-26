@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
  */
 public class MergeTwoSortedArraysTest {
 
-    @Ignore
     @Test
     public void mergeTest() {
 
@@ -39,5 +38,25 @@ public class MergeTwoSortedArraysTest {
 
         MergeTwoSortedArrays mergeTest = new MergeTwoSortedArrays();
         assertEquals(array3, mergeTest.merge(array1, array2));
+    }
+
+    @Test
+    public void mergeTest2() {
+
+        Integer[] array1 = new Integer[3];
+        Integer[] array3 = new Integer[3];
+
+        array1[0] = 1;
+        array1[1] = 2;
+        array1[2] = 5;
+
+        array3[0] = 1;
+        array3[1] = 2;
+        array3[2] = 5;
+
+
+        MergeTwoSortedArrays mergeTest = new MergeTwoSortedArrays();
+        assertEquals(array3, mergeTest.merge(array1, null));
+
     }
 }
