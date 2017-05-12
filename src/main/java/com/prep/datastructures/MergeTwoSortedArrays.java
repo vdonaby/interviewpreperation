@@ -5,9 +5,7 @@ package com.prep.datastructures;
  */
 public class MergeTwoSortedArrays {
 
-    public Integer[] merge(Integer[] array1, Integer[] array2) {
-
-        Integer[] mergedArray = new Integer[array1.length + array2.length];
+    public Integer[] merge(Integer[] array1, Integer[] array2) {     
 
         int position1 = 0;
         int position2 = 0;
@@ -19,6 +17,8 @@ public class MergeTwoSortedArrays {
         if(array2 == null) {
             return array1;
         }
+        
+        Integer[] mergedArray = new Integer[array1.length + array2.length];
 
         for(int i=0; i<mergedArray.length; i++) {
             if(position1 < array1.length) {

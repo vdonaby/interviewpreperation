@@ -1,7 +1,5 @@
 package com.prep.algorithms;
 
-import static com.sun.tools.javac.jvm.ByteCodes.swap;
-
 /**
  * Created by z001hk8 on 4/26/17.
  */
